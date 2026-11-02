@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Deyvid Blas | Portafolio Tecsup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">JHON DEYVID<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Abrir Menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 1. Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Estudiante de Tecsup</span>
+            <h1>Jhon Deyvid Blas</h1>
+            <p class="subtitle">Fotografía Editorial, Dirección Creativa & Desarrollo Visual</p>
+            <div class="hero-btns">
+                <a href="#galeria" class="btn btn-primary">Ver Galería</a>
+                <a href="#contacto" class="btn btn-outline">Contáctame</a>
+            </div>
+        </div>
+        <a href="#sobre-mi" class="scroll-down" aria-label="Ir abajo">↓</a>
+    </section>
+
+    <!-- 2. Sobre Mí -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-tag">Perfil Profesional</span>
+                    <h2>Capturando la esencia a través del arte visual y la precisión.</h2>
+                    <p>
+                        Hola, soy <strong>Jhon Deyvid Blas</strong>, estudiante de <strong>Tecsup</strong> apasionado por la fotografía, el diseño compositivo y el desarrollo técnico. Mi enfoque combina la elegancia estética de las artes visuales con una metodología estructurada y moderna.
+                    </p>
+                    <p>
+                        Inspirado en narrativas visuales de alto contraste y composiciones mínimas pero impactantes, creo experiencias estéticas destinadas a destacar la identidad única de cada proyecto.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>Tecsup</h3>
+                            <p>Formación Técnica</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>50+</h3>
+                            <p>Proyectos Visuales</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>100%</h3>
+                            <p>Compromiso Creativo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Servicios -->
+    <section id="servicios" class="section bg-alt">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Especialidades</span>
+                <h2>Servicios Profesionales</h2>
+                <p>Soluciones creativas adaptadas a tus necesidades visuales e institucionales.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3>Fotografía Editorial</h3>
+                    <p>Producciones fotográficas enfocadas en moda, retratos conceptuales y narrativa comercial con estilo cinematográfico.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Dirección de Arte</h3>
+                    <p>Conceptualización visual, paleta de colores, composición de escenarios y curaduría estilística para proyectos de marca.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Desarrollo & Proyectos</h3>
+                    <p>Integración de soluciones tecnológicas y de diseño aprendidas en Tecsup para crear plataformas web atractivas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Galería -->
+    <section id="galeria" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Portafolio</span>
+                <h2>Galería de Trabajos</h2>
+                <p>Explora una selección de mis obras fotográficas y creativas más destacadas.</p>
+            </div>
+
+            <!-- Filtros -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="editorial">Editorial</button>
+                <button class="filter-btn" data-filter="retrato">Retrato</button>
+                <button class="filter-btn" data-filter="arquitectura">Arquitectura</button>
+            </div>
+
+            <!-- Grid Galería -->
+            <div class="gallery-grid">
+                <div class="gallery-item editorial" onclick="openLightbox('https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80', 'Fotografía Editorial Moda')">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" alt="Editorial 1">
+                    <div class="gallery-overlay">
+                        <h4>Sombra & Luz</h4>
+                        <p>Editorial</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item retrato" onclick="openLightbox('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80', 'Retrato Conceptual')">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Retrato 1">
+                    <div class="gallery-overlay">
+                        <h4>Miradas Espontáneas</h4>
+                        <p>Retrato</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item arquitectura" onclick="openLightbox('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80', 'Líneas Modernas')">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Arquitectura 1">
+                    <div class="gallery-overlay">
+                        <h4>Estructuras Minimalistas</h4>
+                        <p>Arquitectura</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item editorial" onclick="openLightbox('https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?auto=format&fit=crop&w=1200&q=80', 'Estilo Urbano')">
+                    <img src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?auto=format&fit=crop&w=600&q=80" alt="Editorial 2">
+                    <div class="gallery-overlay">
+                        <h4>Geometría Urbana</h4>
+                        <p>Editorial</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item retrato" onclick="openLightbox('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80', 'Expresión Humana')">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Retrato 2">
+                    <div class="gallery-overlay">
+                        <h4>Siluetas & Carácter</h4>
+                        <p>Retrato</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item arquitectura" onclick="openLightbox('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80', 'Perspectiva Neón')">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Arquitectura 2">
+                    <div class="gallery-overlay">
+                        <h4>Horizontes de Cristal</h4>
+                        <p>Arquitectura</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Imagen ampliada">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- 5. Contacto (Formulario) -->
+    <section id="contacto" class="section bg-alt">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Conectemos</span>
+                    <h2>¿Tienes un proyecto en mente?</h2>
+                    <p>Si deseas colaborar, solicitar una cotización o conocer más sobre mi trabajo como estudiante de Tecsup, envíame un mensaje.</p>
+                    
+                    <div class="info-details">
+                        <div class="info-item">
+                            <div class="icon">📍</div>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Lima, Perú</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon">🎓</div>
+                            <div>
+                                <h4>Institución</h4>
+                                <p>Tecsup - Educación Superior</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>jhon.blas@tecsup.edu.pe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <h3>Enviar Mensaje</h3>
+                        
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interés</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="editorial">Fotografía Editorial</option>
+                                <option value="direccion">Dirección de Arte</option>
+                                <option value="desarrollo">Desarrollo & Proyectos</option>
+                                <option value="otro">Otro Asunto</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                        
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 <strong>Jhon Deyvid Blas</strong> - Estudiante de Tecsup. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
